@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Student Registration System</title>
+</head>
+
+<body>
+    <div id="studentRegistrationSystem" class="min-h-screen flex items-center justify-center">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-12 gap-6 p-4 sm:p-4 lg:p-4 md:p-12 xl:p-12 2xl:p-12">
+
+                <div class="col-span-12">
+                    <h1 class="text-center text-white text-3xl p-4 font-bold">
+                        Student Registration System
+                    </h1>
+                </div>
+
+                <!-- Form -->
+                <div class="col-span-12 md:col-span-4 bg-white p-6 rounded-xl shadow">
+                    <form>
+                        <label for="name">Student name:</label>
+                        <input class="bg-gray-200 rounded-2xl p-2 w-full mt-2" type="text" id="name"
+                            name="name"><br><br>
+
+                        <label for="id">Student ID:</label>
+                        <input class="bg-gray-200 rounded-2xl p-2 w-full mt-2" type="text" id="id" name="id"><br><br>
+
+                        <label for="email">Email ID:</label>
+                        <input class="bg-gray-200 rounded-2xl p-2 w-full mt-2" type="text" id="email"
+                            name="email"><br><br>
+
+                        <label for="contact">Contact No:</label>
+                        <input class="bg-gray-200 rounded-2xl p-2 w-full mt-2" type="text" id="contact"
+                            name="contact"><br><br>
+                    </form>
+                    <div class="text-center">
+                        <button id="submit" class="bg-primary text-white px-6 py-2 rounded-xl">Submit</button>
+                    </div>
+                </div>
+
+                <!-- Table -->
+                <div class="col-span-12 md:col-span-8 bg-white p-6 rounded-xl shadow">
+                    <div id="table-container">
+                        <table id="studentTable" class="overflow-x-auto w-full border border-gray-300">
+                            <thead>
+                                <tr class="bg-gray-200">
+                                    <th class="p-2 border">Name</th>
+                                    <th class="p-2 border">Student ID</th>
+                                    <th class="p-2 border">Email ID</th>
+                                    <th class="p-2 border">Contact No</th>
+                                    <th class="p-2 border">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="studentTableBody"></tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
